@@ -468,12 +468,13 @@ knitr::include_graphics("figures/socialsensing.svg")
 
 ## Social media macroscopes: Take-home message
 
-```{r, echo=FALSE, out.width=950, fig.align='center'}
-knitr::include_graphics("figures/summary2.svg")
-```
-
 **Despite important concerns about Computational Social Science methods in terms of representativity and online behavior, social media macroscopes of emotion can substantially agree with established social science methods**
 
+```{r, echo=FALSE, out.width=900, fig.align='center'}
+knitr::include_graphics("figures/WHR.png")
+```
+
+Using social media data to capture emotions before and during COVID-19. Hannah Metzler, Max Pellert, David Garcia. World Happiness Report (2022) 
 ---
 
 
