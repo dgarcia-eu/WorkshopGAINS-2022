@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Computational Affective Science</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="David Garcia   TU Graz and Complexity Science Hub Vienna" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="libs/footer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Computational Affective Science
+]
+.subtitle[
+## Understanding Emotions in the Digital Society
+]
+.author[
+### David Garcia <br> <em>TU Graz and Complexity Science Hub Vienna</em>
+]
+.date[
+### Slides vailable at: dgarcia.eu/GAINS2022
+]
+
+---
+
+
+
+
+
+
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;David Garcia - Computational Social Science Lab - TU Graz + CSH Vienna&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+background-image: url(figures/AboutUS.svg)
+background-size: 98%
+
+---
+
+# Overview
+
+&lt;/br&gt;
+##1. Computational Affective Science
+
+##2. Social Media Macroscopes of Emotions
+
+##3. Collective Emotions and Social Resilence
+
+---
+
+# What are emotions?
+
+&gt; Emotions as **core affect**: Short-lived psychological states that consume the individual's energy and strongly influence cognition and behavior, for example expression.
+
+Emotional or affective behavior of an individual takes place at various timescales:
+
+![](figures/emotionscale.png)
+- Reflex reactions: fast physiological responses  
+- Core affect: relax quickly and are triggered by a stimulus
+- Mood: slow-changing and constant emotional state 
+- Personality traits are lifelong behavior patterns, some about emotions
+
+---
+
+# Computational Affective Science
+
+&gt; **Affective Science** is the (interdisciplinary) scientific study of emotions. 
+
+&gt; **Computational Affective Science** applies methods from Computer Science and Data Science to Affective Science. 
+
+Some examples are affective computing, cyberpsychology of affect, emotion recognition, and sentiment analysis.
+
+.center[![:scale 60%](figures/handbook.png)]
+
+---
+
+# Measuring emotions
+
+Emotions can be measured through various signals and observable behaviors:
+
+![](figures/measurement.png)
+
+In the following, we are going to cover four models of how to capture emotions in quantitative research. Some approaches are better for some modes or signals (e.g. text, facial expression) than others.
+
+---
+
+# Ekman's basic emotions model
+
+.center[![:scale 48%](figures/ekman.png)]
+Developed by **Paul Ekman** to classify facial expression of emotions. 
+---
+
+# Plutchik's wheel of emotions
+.center[![:scale 47%](figures/Wheel.png)]
+
+---
+
+# The circumplex model of affect
+
+.center[![:scale 47%](figures/circumplex.svg)]
+
+---
+
+# Dimensions in the circumplex model
+
+
+&gt; **Valence:** the degree of pleasure experienced in an emotion  
+  
+- Explains the most variance from positive/pleasant to negative/unpleasant
+- It can be measured physiologically with smiling and frowning muscle activity
+- It is the most common dimension of emotions included in text analysis  
+
+&gt; **Arousal:** the level of activity associated with an emotion  
+
+- Explains less variance than valence but it is informative to differentiate emotions  
+- It can be measured with skin conductance and heart rate sensors  
+- Not so common in text analysis but can be estimated from voice tone  
+
+Extensions include other dimensions: dominance and surprise
+---
+
+# Positive And Negative Affect Schedule
+
+.center[![:scale 55%](figures/PANAS2.jpg)]
+
+Two simultaneous dimensions of Positive Affect and Negative Affect (PANAS).  
+Commonly known as the *mood* model.
+---
+
+&lt;center&gt;
+&lt;img src="figures/CSSinfo.png" width="1200" /&gt;
+
+---
+
+## *Computational* in Computational Social Science
+It can have three meanings:
+
+- **Digital**&lt;br&gt; 
+Based on large datasets of human behavior, for example produced by the Web and social media
+
+- **Computerized**&lt;br&gt;
+The quantitative analysis of data in an automated, tractable, repeatable, and extensible fashion
+
+- **Generative**&lt;br&gt;
+Application of data and results to design of agent-based models that explain complex social phenomena and motivate interventions
+
+---
+
+## The Hype Cycle of Computational Social Science
+&lt;center&gt;
+&lt;img src="figures/Hype1.svg" width="900" /&gt;
+
+---
+## The Hype Cycle of Computational Social Science
+&lt;center&gt;
+&lt;img src="figures/Hype3.svg" width="900" /&gt;
+
+---
+
+## Strengths and weaknesses of digital trace data
+
+**Strengths:**
+- Complementary approach to traditional survey and experimental methods
+- Unprecedented scales and granularities
+- Ease of data access, replicability of results
+- Potentially high external validity, behavior in vivo
+
+**Weaknesses:**
+- Limits to internal validity: Lack of counterfactuals hinders causal analysis
+- Self-selection bias: Who talks? Normalization issues: Who is silent?
+- Data gatekeepers, Twitter as a model organism
+- Intractability of black-box predictions and data piñatas
+
+&lt;div style="font-size:15pt"&gt;
+Bit By Bit: Social Research in the Digital Age. M. Salganik (2017)
+&lt;/div&gt;
+
+&lt;div style="font-size:15pt"&gt;
+Meaningful measures of human society in the twenty-first century. D. Lazer et al. (2021)
+&lt;/div&gt;
+
+
+---
+
+# Avoid making a data piñata
+
+&lt;img src="figures/pinata.png" width="1050" /&gt;
+
+---
+
+background-image: url(figures/VennV2-1.svg)
+background-size: 97%
+---
+background-image: url(figures/VennV2.svg)
+background-size: 97%
+---
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;
+&lt;a href=https://arxiv.org/abs/2107.13236&gt; Social media emotion macroscopes reflect emotional experiences in society at large. David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. https://arxiv.org/abs/2107.13236 (2021)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
+
+---
+# Social Media Macroscopes of Emotions
+
+
+&lt;/br&gt;
+##1. Computational Affective Science
+
+##2. *Social Media Macroscopes of Emotions*
+
+##3. Collective Emotions and Social Resilence
+
+---
+
+&lt;img src="figures/earth.svg" width="950" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Social Media Macroscopes of Emotions
+
+.pull-left[
+&lt;img src="figures/Macy.jpg" width="1100" /&gt;
+&lt;font size="5"&gt;
+&lt;a href="https://science.sciencemag.org/content/333/6051/1878/"&gt; Diurnal and seasonal mood vary with work, sleep, and daylength across diverse cultures. Golder &amp; Macy, Science (2011) &lt;/a&gt;
+&lt;/font&gt;
+]
+
+.pull-right[
+&lt;img src="figures/hedonometer.png" width="1100" /&gt;
+
+&lt;font size="5"&gt;
+&lt;a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752"&gt; Temporal patterns of happiness and information in a global social network: Hedonometrics and Twitter. Dodds et al. PLoS One (2011) &lt;/a&gt;
+&lt;/font&gt;
+]
+
+---
+
+## Methods: Linguistic Signals in Text
+
+**Linguistic Inquiry and Word Count, LIWC (pronounced “Luke”)**  
+- Simple word matching method  
+- Generated and validated by psychologists (Pennebaker et al., 2001-2015)
+- Multiple classes, calibrated for netspeak and neologisms
+
+
+.pull-left[
+&lt;img src="figures/LIWC.png" width="1000" /&gt;
+]
+.pull-right[
+**Examples of LIWC classes:**  
+Positive Affect, Negative Affect  
+Anxiety, Sadness, Anger  
+Social processes  
+Prosocial terms (Frimer, et. al, 2014)  
+French values (libert\*, egalit\*, fraternit\*)
+]
+
+
+---
+
+## Methods: Supervised emotion detection in tweets
+
+&lt;img src="figures/HuggingFace.png" width="1100" /&gt;
+
+https://huggingface.co/maxpe/twitter-roberta-base_semeval18_emodetection
+
+https://huggingface.co/oliverguhr/german-sentiment-bert
+---
+
+## Limits of Social Media Data to Study Emotion
+
+&lt;img src="figures/Jaidka.png" width="1100" /&gt;
+
+[Estimating geographic subjective well-being from Twitter: A comparison of dictionary and data-driven language methods. Jaidka et al. PNAS (2020)](https://www.pnas.org/content/117/19/10165.short)
+
+**More later today in journal club!**
+
+---
+# Validating a UK emotion macroscope
+
+&lt;img src="figures/MacroTest2.svg" width="975" style="display: block; margin: auto;" /&gt;
+
+---
+
+# Data to test the macroscope
+
+&lt;img src="figures/Data.svg" width="1100" style="display: block; margin: auto;" /&gt;
+
+- Text analysis: dictionary-based (LIWC) and supervised (RoBERTa)
+- Gender-rescaled time series of emotional expression
+- Pre-registered hypotheses with prediction period from Nov 2020
+---
+
+# Sadness in Twitter and YouGov
+
+&lt;img src="figures/Sadness.svg" width="1200" style="display: block; margin: auto;" /&gt;
+
+- Similar results with dictionary-based and supervised methods (r~0.65)
+---
+# Anxiety in Twitter and YouGov
+
+&lt;img src="figures/Anxiety.svg" width="1200" style="display: block; margin: auto;" /&gt;
+
+- Improvement thanks to gender information in tweets
+
+---
+# Joy in Twitter and YouGov
+
+&lt;img src="figures/Joy.svg" width="1200" style="display: block; margin: auto;" /&gt;
+
+- Good correlation with supervised method but no correlation with dictionary-based method
+
+
+---
+# Overview of results
+
+&lt;img src="figures/Corrs.png" width="1200" style="display: block; margin: auto;" /&gt;
+
+- Consistent results for both methods in sadness
+- Similar for anxiety except for the classifier in the prediction period
+- LIWC positive largely fails: lexicon is too general
+- Joy supervised classifier has similar correlation as negative classifiers
+---
+
+# Exploring 12 emotional states
+.pull-left[
+
+- Time series of number sentences like "I am [emotion]" on Twitter
+
+- Weak correlations happen for infrequent emotions in text
+
+- Comparison: US weekly pre-election polls correlate with 0.66
+
+- Arxiv preprint at https://arxiv.org/abs/2107.13236
+
+]
+
+.pull-right[
+&lt;img src="figures/Figure2.svg" width="700" /&gt;
+]
+
+---
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;
+Validating daily social media macroscopes of emotions. Max Pellert, Hannah Metzler, Michael Matzenberger, David Garcia. Scientific Reports (2022)&lt;/span&gt;&lt;/div&gt;
+
+---
+
+## Study 2: Austrian macroscope in Der Standard
+
+.pull-left[
+
+- 20-day emotion survey in derstandard.at (N=268,128)
+- Daily frequency, 3-day windows
+
+- Text from Der Standard forum (N=452,013)
+
+- Austrian tweets (N=515,187) filtered as UK macroscope
+
+- Compared dictionary-based (LIWC) and supervised model (GS)
+
+]
+.pull-right[
+&lt;img src="figures/Umfrage.png" width="450" /&gt;
+]
+
+---
+
+## Survey emotions and Der Standard sentiment
+
+&lt;img src="figures/DerStandardResult.png" width="1000" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Survey emotions and Twitter sentiment
+
+&lt;img src="figures/DS2.svg" width="1000" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+## Testing various configurations
+
+&lt;img src="figures/DerStandardCorrs.png" width="1000" style="display: block; margin: auto;" /&gt;
+
+
+---
+
+# Correlations with new COVID-19 cases
+
+.pull-left[
+&lt;img src="figures/DS31.svg" width="600" /&gt;
+]
+.pull-right[
+&lt;img src="figures/DS32.svg" width="600" /&gt;
+]
+
+- Do correlations attenuate due to additional social media measurement error?
+- Survey emotion correlation with new cases as strong as Twitter sentiment
+- Errors sources might be different: Need for conceptual validations
+
+---
+
+
+
+
+## Online Media for Social Sensing of Emotions?
+
+&lt;img src="figures/socialsensing.svg" width="850" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Social media macroscopes: Take-home message
+
+&lt;img src="figures/summary2.svg" width="950" style="display: block; margin: auto;" /&gt;
+
+**Despite important concerns about Computational Social Science methods in terms of representativity and online behavior, social media macroscopes of emotion can substantially agree with established social science methods**
+
+---
+
+
+## Collective Emotions and Social Resilence
+
+
+&lt;/br&gt;
+##1. Computational Affective Science
+
+##2. Social Media Macroscopes of Emotions
+
+##3. *Collective Emotions and Social Resilence*
+
+---
+
+
+layout: true
+&lt;div class="my-footer"&gt;&lt;span&gt;
+&lt;a href=https://doi.org/10.1177%2F0956797619831964&gt; Collective Emotions and Social Resilience in the Digital Traces After a Terrorist Attack. David Garcia Bernard Rimé. Psychological Science (2019)&lt;/a&gt;&lt;/span&gt;&lt;/div&gt; 
+
+---
+
+## The Social Function of Collective Emotions
+
+&lt;center&gt;
+&lt;img src="figures/ColectiveEmotions.png" width="900" /&gt;
+&lt;/center&gt;
+
+- **Theory of collective effervescence** (Durkheim, 1912):
+Shared emotions generate social identity, reinforce shared beliefs, and lead to higher solidarity
+
+- **Collective emotions** (von Scheve and Salmela, 2014):   
+Emotional states shared by a large amount of people at the same time
+
+
+---
+
+background-size: 40%
+background-image: url(figures/Trauma.png)
+background-position: 90% 60%
+
+
+## Emotional Responses to Collective Traumas
+
+**How do societies respond to traumatic events?**  
+**Is there a social function of collective emotions?**
+.pull-left[
+- Emotional synchronization: Experience of simultaneous negative emotions
+
+- Collective emotion lasts longer than individual emotional reactions
+
+- Individuals that participate in the collective emotions show higher levels of long-term solidarity ]
+
+---
+
+
+## Agent-Based Modelling of Collective Emotions
+
+.pull-left[
+&lt;img src="figures/Framework.png" width="1000" /&gt;
+
+ABM calibrated with experiment data
+- φ: post-shock AR(1) term
+- φ~0: subcritical response
+- φ&gt;0: critical, collective behavior
+]
+
+.pull-right[
+&lt;img src="figures/Simulation.png" width="450" /&gt;
+&lt;center&gt;
+Mean valence in simulations
+&lt;/center&gt;
+]
+
+&lt;div style="font-size:14pt"&gt;
+[The Dynamics of Emotions in Online Interaction. Garcia et al. Royal Society Open Science 3 (2016)](https://royalsocietypublishing.org/doi/full/10.1098/rsos.160059)
+
+---
+
+## Twitter Digital Traces after a Terrorist Attack
+
+Focus on Paris Attacks of of Nov 13, 2015  
+Removed bots, news media, and organizations. Final sample of 62,114 users  
+Retrieved historical timeline of users. Total of more than 27 Million tweets (no RT)
+&lt;center&gt;
+&lt;img src="figures/ParisCase.png" width="900" /&gt;
+
+---
+
+
+## Evidence of Collective Emotions
+&lt;center&gt;
+&lt;img src="figures/TS.png" width="750" /&gt;
+&lt;/center&gt;
+
+---
+
+### Collective Dynamics of Social Resilience Indicators
+&lt;center&gt;
+&lt;img src="figures/TS2.png" width="720" /&gt;
+&lt;/center&gt;
+
+
+---
+
+## Emotional Synchronization Effect
+
+.pull-left[
+&lt;center&gt;
+&lt;img src="figures/TS3.png" width="470" /&gt;
+&lt;/center&gt;
+]
+
+.pull-right[
+Division of users into two groups based on their emotional expression two weeks after the attacks
+
+Frequency of social process terms:
+- Very similar before the attacks
+- Strong difference after the attacks
+- Difference lasts for months
+
+Similar effect for prosocial terms and shared values terms
+]
+
+---
+
+# Conclusions of Paris attacks study
+
+- Terrorist attacks trigger collective emotions that we can observe online
+
+- Terms related to social resilience increase after collective emotions
+
+- Individuals expressing stronger emotions used on average more terms related to social processes, prosocial behavior, and shared values
+
+- Collective emotions are not just venting, they can keep us together
+
+- Negative effects: inter-group conflict, intolerance, short-term orientation...
+
+- Online interactive visualization at: http://dgarcia.eu/ParisAttacks.html
+
+[**Collective Emotions and Social Resilience in the Digital Traces After a Terrorist Attack. David Garcia Bernard Rimé. Psychological Science (2019)**](https://journals.sagepub.com/doi/full/10.1177/0956797619831964)
+
+
+---
+# Summary
+
+- [**Social Media Data in Affective Science.** Max Pellert, Simon Schweighofer and David Garcia. Handbook of Computational Social Science (2022)](https://www.routledge.com/Handbook-of-Computational-Social-Science-Volume-1-Theory-Case-Studies/Engel-Quan-Haase-Liu-Lyberg/p/book/9780367456528)
+- [**Social media emotion macroscopes reflect emotional experiences in society at large.** David Garcia, Max Pellert, Jana Lasser, Hannah Metzler. Arxiv preprint (2021)](https://arxiv.org/abs/2107.13236)
+- [**Validating daily social media macroscopes of emotions. Max Pellert, Hannah Metzler, Michael Matzenberger, David Garcia.** Scientific Reports (2022)](https://www.nature.com/articles/s41598-022-14579-y)
+- [**Collective Emotions and Social Resilience in the Digital Traces After a Terrorist Attack.** David Garcia, Bernard Rimé. Psychological Science (2019)](https://journals.sagepub.com/doi/full/10.1177/0956797619831964)
+  
+### About to open a Postdoc position in Konstanz!
+
+**More at: [http://dgarcia.eu](https://dgarcia.eu) and Twitter: [@dgarcia_eu](https://twitter.com/dgarcia_eu)**
+
+
+
+---
+
+# Slides appendix
+
+
+---
+
+
+
+---
+
+
+## Appendix 1: The Vienna terrorist attack of Nov 2nd
+
+&lt;img width=900 src="https://pbs.twimg.com/media/EmAWjtSXUAEd2Wx?format=jpg&amp;name=large"&gt;
+
+---
+
+
+## Austrian Emotions on Twitter
+
+&lt;img src="figures/Dashboard1.png" width="900" /&gt;
+
+&lt;div style="font-size:15pt"&gt; 
+Paper: [Dashboard of Sentiment in Austrian Social Media During COVID-19. Frontiers in Big Data. Pellert et al. (2020)](https://www.frontiersin.org/articles/10.3389/fdata.2020.00032/full)  
+Dashboard: https://mpellert.at/covid19_monitor_austria
+---
+
+## Austrian Emotions in Der Standard Tickers
+
+&lt;img src="figures/Dashboard2.png" width="900" /&gt;
+&lt;div style="font-size:15pt"&gt; 
+Paper: [Dashboard of Sentiment in Austrian Social Media During COVID-19. Frontiers in Big Data. Pellert et al. (2020)](https://www.frontiersin.org/articles/10.3389/fdata.2020.00032/full)  
+Dashboard: https://mpellert.at/covid19_monitor_austria
+
+---
+
+background-size: 50%
+background-image: url(figures/OpenDoor.gif)
+background-position: 90% 60%
+
+
+## Shelter offerings on Twitter
+
+.pull-left[
+&lt;img width=1000 src="https://pbs.twimg.com/media/EmAbRICXYAA0WqB?format=png&amp;name=large"&gt;
+- Number of tweets with hashtags similar to [#Schwedenplatztür](https://twitter.com/hashtag/schwedenplatzt%C3%BCr)
+- More in Twitte thread:
+https://twitter.com/dgarcia_eu/status/1324097342551842817
+]
+
+---
+
+## Appendix 2: Emotions as a CUSP catastrophe
+
+&lt;img src="figures/EmoCusp.png" width="800" style="display: block; margin: auto;" /&gt;
+
+A systems approach to appraisal mechanisms in emotion. David Sander, Didier Grandjean, Klaus R. Scherer. Neural Networks (2005)
+
+---
+
+# Emotions and the free energy principle
+
+&lt;img src="figures/FreeEnergy.png" width="880" style="display: block; margin: auto;" /&gt;
+
+Emotional Valence and the Free-Energy Principle. Mateus Joffily, Giorgio Coricelli. PLOS Computational Biology (2013)
+---
+
+## The Cyberemotions modelling framework
+
+&lt;img src="figures/Cyberemotions.png" width="500" style="display: block; margin: auto;" /&gt;
+
+- Horizontal: agent design
+  - `\(v\)`, `\(a\)`: internal valence and arousal emotional state of the agent
+  - `\(s\)`: visible emotional expression as measured (e.g. pos/neg/neu)
+- Vertical: interaction between agents
+  - `\(h\)` is a communication field averaging recent expression of agents
+  - Agent's emotions change with time and the value of `\(h\)`
+---
+
+# Valence and arousal dynamics
+
+&lt;img src="figures/Dynamics1.png" width="900" style="display: block; margin: auto;" /&gt;
+
+- `\(b,d\)`: baselines of valence and arousal
+- `\(\gamma_v\)`, `\(\gamma_a\)`: relaxation tendency of valence and arousal towards baselines
+- `\(\xi_v\)`, `\(\xi_a\)`: stochastic components of valence and arousal dynamics
+
+[The dynamics of emotions in online interaction. David Garcia, Arvid Kappas, Dennis Küster and Frank Schweitzer. Royal Society Open Science (2016)](https://royalsocietypublishing.org/doi/10.1098/rsos.160059)
+
+---
+# Examples of field influence functions
+
+&lt;img src="figures/Dynamics2.png" width="1000" style="display: block; margin: auto;" /&gt;
+
+- Field influence functions as products of a polynomial of valence and arousal
+
+- Approximation to some unknown function to fit empirically
+
+- Valence depends on `\(h\)` (pos/neg) and arousal on `\(|h|\)` (absolute value)
+
+---
+
+# Activation function
+
+`$$\large s_i(t) = f_s(v_i(t)) \Theta [a_i(t) - \tau_i]$$`
+- `\(s_i(t)\)` is the visible emotional expression of agent `\(i\)` aggregated in field `\(h\)`
+
+- `\(f_s(v)\)` is a function of how valence is expressed through text
+  - For example only sign or an approximation of internal valence
+
+- `\(\tau_i\)` is agent `\(i\)`'s arousal threshold to expression
+
+- `\(\Theta[x]\)` is the Heaviside step function: it has value 1 if `\(x&gt;0\)`, and 0 otherwise
+
+- After expression: reset of arousal to baseline ( `\(a_i(t) \leftarrow d\)` )
+---
+
+# Behavior in simulations
+
+&lt;img src="figures/Colemodyn.png" width="750" style="display: block; margin: auto;" /&gt;
+
+[An agent-based model of collective emotions in online communities. Frank Schweitzer, David Garcia. The European Physical Journal B, 2010](http://www.springerlink.com/index/10.1140/epjb/e2010-00292-1)
+
+---
+
+# Calibration experiment setup
+
+&lt;img src="figures/Post.png" width="750" style="display: block; margin: auto;" /&gt;
+
+- Study 1: reading pos/neg/neu threads and self-reports at home
+- Study 2: reading pos/neg/neu threads and self-reports in the lab
+- Study 3: reply to pos/neg/neu threads and self-reports before/after
+- Self-reports include valence and arousal ratings and intention to participate in discussion and to continue reading the thread
+
+---
+
+# Valence result
+
+
+&lt;img src="figures/ValenceExp.png" width="900" style="display: block; margin: auto;" /&gt;
+
+- Dynamics well fitted by a linear function with intercept shift depending on thread polarity ( `\(h\)` ). Natural decay of valence with `\(\gamma_v = 0.37 \quad  [min^{-1}]\)`
+---
+
+# Arousal trigger results
+
+&lt;img src="figures/ArousalExp.png" width="900" style="display: block; margin: auto;" /&gt;
+
+- Dynamics well fitted by a linear function with intercept shift depending on thread abs value ( `\(|h|\)` ). Natural decay of arousal with `\(\gamma_a = 0.41 \quad  [min^{-1}]\)`
+---
+
+# Empirical expression function
+
+&lt;img src="figures/SentiExp.png" width="850" style="display: block; margin: auto;" /&gt;
+
+- Probability of post being classified as positive vs not positive and negative vs not negative in logistic regression (SentiStrength output with threshold)
+- Function of valence but independent of arousal
+---
+
+# Expression trigger and effects
+
+&lt;img src="figures/ExpExp.png" width="900" style="display: block; margin: auto;" /&gt;
+
+- Probability to participate is flat up to a threshold of arousal, then it grows
+- Effect of expression of arousal is a linear approach to baseline, not a reset
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="libs/perc.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
